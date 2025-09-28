@@ -1,48 +1,45 @@
-// const a = 2;
-// const b = '5';
-// const d = 'undefined';
+const a = 2;
+const b = '5';
 
+// AND
+console.log(a > b && a == b);
 
-// // AND
-// console.log(a > b && a == b);
+console.log('-------1-------');
 
-// console.log('--------------');
+// OR
+console.log(a < b || a == b);
+console.log(a > b || a == b);
+console.log(a < b || a === b);
+console.log(a > b || a === b);
 
-// // OR
-// console.log(a < b || a == b);
-// console.log(a > b || a == b);
+console.log('-------2-------');
 
-// console.log('--------------');
+// NOT
+console.log(!(a > b));
+console.log(!(a < b));
+console.log(!(a == b));
+console.log(!(a != b));
+console.log(!(a != b) && (a < b || a == b));
 
-// // NOT
-// console.log(!(a > b));
-// console.log(!(a < b));
-// console.log(!(a == b));
-// console.log(!(a != b));
-// console.log(!(a != b) && (a < b || a == b));
+console.log('-------3-------');
 
-// console.log('--------------');
-
-// // Nullish coalescing
-// const c = d ?? 'smth else';
-// console.log(c);
+// Nullish coalescing
+const c = b ?? 'smth else';
+console.log(b);
 
 // If-else statement
-// const a = 2;
-// const b = 5;
 
-// if (a > b) {
-//     console.log('a is greater than b');
-// } else if (a == b) {
-//     console.log('a is equal to b');
-// } else {
-//     console.log('a is less than b');
-// }
+if (a > b) {
+    console.log('a is greater than b');
+} else if (a == b) {
+    console.log('a is equal to b');
+} else {
+    console.log('a is less than b');
+}
 
+console.log('-------4-------');
 
-const b = '5';
-const c = 10;
-
-const d = typeof c === 'number' ? c : b;
+const stringFive = '5';
+const d = typeof c === 'number' ? c : stringFive;
 console.log(d, typeof d);
 
