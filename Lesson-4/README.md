@@ -1,4 +1,5 @@
 # ty-github-project-1
 
-Hello! This is test project from TY. Enjoy! Enjoy2! enjoy3
-enjoy4!
+This is my Homework for Lesson 4.
+
+Here I operated with loops, objects and arrays.
