@@ -15,7 +15,14 @@ const car = {
     },
     get model() {
         return this._model;
+    },
+    getSummary() {
+        return `${this._year} ${this._make} ${this._model} with ${this._interiorColor} interior and ${this._windows.front} front windows.`;
     }
 };
 
-console.log('This is:' + car.make + ' ' + car.model + ' ' + car._year + ' ' + car._interiorColor + ' ' + car._windows.front + ' ' + car._windows.back);
+console.log(car.getSummary());
+
+car.make = 'Honda';
+console.log('After changing make:');
+console.log(car.getSummary());
